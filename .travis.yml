@@ -15,7 +15,7 @@ before_install:
   - gcloud config set compute/zone us-central1-a
   - gcloud container clusters get-credentials postget-cluster
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t louismbuyu17/postget-react-test -f ./pgclient/Dockerfile.dev ./pgclient
+  - docker build -t louismbuyu17/postget-react-test -f ./pg_client/Dockerfile.dev ./pg_client
 
 script:
   - docker run louismbuyu17/postget-react-test npm test -- --coverage

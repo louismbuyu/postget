@@ -1,4 +1,4 @@
-docker build -t louismbuyu17/postget-client:latest -t louismbuyu17/postget-client:$SHA -f ./pgclient/Dockerfile ./pgclient
+docker build -t louismbuyu17/postget-client:latest -t louismbuyu17/postget-client:$SHA -f ./pg_client/Dockerfile ./pg_client
 docker build -t louismbuyu17/postget-server:latest -t louismbuyu17/postget-server:$SHA -f ./pg_postserver/Dockerfile ./pg_postserver
 
 docker push louismbuyu17/postget-client:latest
